@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from "../images/logo.png";
 
 const Navbar = ({ isDark, toggleTheme }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,10 +48,21 @@ const Navbar = ({ isDark, toggleTheme }) => {
             transition={{ duration: 0.5 }}
             className="flex items-center space-x-2"
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-cyan-400 rounded-lg flex items-center justify-center font-bold text-white text-xl">
-              F
-            </div>
-            <span className="text-2xl font-bold font-heading">FoxAirComm</span>
+      <div className="flex items-center space-x-3 px-4 py-2 
+bg-gradient-to-r from-blue-600 to-cyan-400 
+rounded-xl shadow-md">
+
+  <img 
+    src={logo} 
+    alt="Logo" 
+    className="w-10 h-10 object-contain bg-white rounded-md p-1"
+  />
+
+  <span className="text-2xl font-bold text-white tracking-wide">
+    Fox AirComm
+  </span>
+
+</div>
           </motion.div>
 
           <div className="hidden md:flex items-center space-x-8">

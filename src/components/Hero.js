@@ -14,7 +14,10 @@ const Hero = () => {
   
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+     <section 
+  id="home" 
+  className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-r from-blue-50 via-white to-cyan-50">
+
       <div className="hero-glow" style={{ top: '10%', left: '10%' }}></div>
       <div className="hero-glow" style={{ bottom: '10%', right: '10%' }}></div>
 
@@ -38,7 +41,11 @@ const Hero = () => {
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-heading tracking-tight leading-tight">
               Grow Your Business with{' '}
-              <span className="gradient-text">Smart Digital Marketing</span>
+             <span className="bg-gradient-to-r from-blue-600 to-cyan-400 
+                             bg-clip-text text-transparent">
+           Smart Digital Marketing
+          </span>
+
             </h1>
 
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
@@ -97,14 +104,14 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-             <img
-            src={banner}
-            alt="Digital Marketing"
-             className="rounded-2xl"
-            />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-            </div>
+       <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[500px]">
+  <img
+    src={banner}
+    alt="Digital Marketing"
+    className="w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 to-transparent"></div>
+</div>
 
             <motion.div
               animate={{ y: [0, -10, 0] }}

@@ -61,19 +61,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'hello@foxaircomm.com',
+      value: 'info@foxaircomm.com',
       link: 'mailto:hello@foxaircomm.com',
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      value: '+91 8879864151',
+      link: 'tel:+91 8879864151',
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Office No. BR-1-412/413, 4th Floor, B-Wing, Jai Ganesh Vision, Akurdi Pune-411035',
       link: '#',
     },
   ];
@@ -129,17 +129,19 @@ const Contact = () => {
               })}
             </div>
 
-            <div className="relative h-64 rounded-2xl overflow-hidden border border-border/50">
-              <iframe
-                title="Google Maps"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555113267!2d-122.507640352466!3d37.757814899308555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
+           <div className="relative h-64 rounded-2xl overflow-hidden border border-border/50">
+  <iframe
+    title="Google Maps"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.3460525487385!2d73.78222397362046!3d18.648460965258312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9cfbe86d6f1%3A0xbceef5272c9be55c!2sINOX%20Jai%20Ganesh%20Vision%20Mall!5e0!3m2!1sen!2sin!4v1770880849989!5m2!1sen!2sin"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+
           </motion.div>
 
           <motion.div
